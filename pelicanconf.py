@@ -26,13 +26,26 @@ AUTHOR_FEED_RSS = None
 # Blogroll
 LINKS = (('Pelican', 'http://getpelican.com/'),
          ('Python.org', 'http://python.org/'),
-         ('Jinja2', 'http://jinja.pocoo.org/'),
-         ('You can modify those links in your config file', '#'),)
+         ('Jinja2', 'http://jinja.pocoo.org/'))
 
 # Social widget
-SOCIAL = (('You can add links in your config file', '#'),
-          ('Another social link', '#'),)
+SOCIAL = (('Facebook', '#'),
+          ('Google+', '#'),
+          ('LinkedIn', '#'),)
+          
+# Share Buttons (Sharrif)
+SHARIFF = True
+SHARIFF_LANG = 'en'
+SHARIFF_THEME = 'grey'
+          
+# Paths
+STATIC_PATHS = ['extras', 'blog']
+EXTRA_PATH_METADATA = {'extra/CNAME': {'path': 'CNAME'},}
+ARTICLE_PATHS = ['blog']
+ARTICLE_SAVE_AS = 'blog/{date:%Y}/{date:%b}/{slug}.html'
+ARTICLE_URL = 'blog/{date:%Y}/{date:%b}/{slug}.html'
 
+# Post Settings
 DEFAULT_PAGINATION = 5
 DEFAULT_DATE = 'fs'
 
@@ -41,12 +54,9 @@ DEFAULT_DATE = 'fs'
 
 # Theme
 THEME = "themes/bootstrap3"
-BOOTSTRAP_THEME = 'paper'
+BOOTSTRAP_THEME = 'slate'
 DISPLAY_BREADCRUMBS = True
 DISPLAY_CATEGORY_IN_BREADCRUMBS = True
 DISPLAY_ARTICLE_INFO_ON_INDEX = True
 SHOW_ARTICLE_AUTHOR = True
 DISPLAY_CATEGORIES_ON_MENU = False
-DISPLAY_PAGES_ON_MENU = False
-DISPLAY_RECENT_POSTS_ON_SIDEBAR = True
-DISPLAY_CATEGORIES_ON_SIDEBAR = True
