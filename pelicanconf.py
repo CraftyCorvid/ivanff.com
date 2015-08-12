@@ -29,18 +29,23 @@ LINKS = (('Pelican', 'http://getpelican.com/'),
          ('Jinja2', 'http://jinja.pocoo.org/'))
 
 # Social widget
-SOCIAL = (('Facebook', '#'),
-          ('Google+', '#'),
-          ('LinkedIn', '#'),)
+SOCIAL = (('Facebook', 'https://www.facebook.com/Hideaki02'),
+          ('Google+', 'https://google.com/+IvanFerrariFossa'),
+          ('Linkedin', 'https://www.linkedin.com/pub/ivan-fossa-ferrari/28/154/23'),
+          ('Twitter', 'https://twitter.com/hideaki042'),)
           
 # Share Buttons (Sharrif)
 SHARIFF = True
+SHARIFF_SERVICES = '[&quot;facebook&quot;,&quot;googleplus&quot;,&quot;twitter&quot;]'
 SHARIFF_LANG = 'en'
 SHARIFF_THEME = 'grey'
+TWITTER_USERNAME = 'hideaki02'
+SHARIFF_TWITTER_VIA = True
           
 # Paths
-STATIC_PATHS = ['extra', 'blog']
-EXTRA_PATH_METADATA = {'extra/CNAME': {'path': 'CNAME'},}
+STATIC_PATHS = ['extra', 'blog', 'pages']
+EXTRA_PATH_METADATA = {'extra/CNAME': {'path': 'CNAME'},
+                       'extra/custom.css': {'path': 'static/custom.css'},}
 ARTICLE_PATHS = ['blog']
 ARTICLE_SAVE_AS = 'blog/{date:%Y}/{date:%b}/{slug}.html'
 ARTICLE_URL = 'blog/{date:%Y}/{date:%b}/{slug}.html'
@@ -54,9 +59,9 @@ DEFAULT_DATE = 'fs'
 
 # Theme
 THEME = "themes/bootstrap3"
-BOOTSTRAP_THEME = 'slate'
-DISPLAY_BREADCRUMBS = True
-DISPLAY_CATEGORY_IN_BREADCRUMBS = True
+CUSTOM_CSS = 'static/custom.css'
+BOOTSTRAP_THEME = 'darkly'
 DISPLAY_ARTICLE_INFO_ON_INDEX = True
-SHOW_ARTICLE_AUTHOR = True
 DISPLAY_CATEGORIES_ON_MENU = False
+GITHUB_USER = 'ivan0xff'
+GITHUB_SHOW_USER_LINK = True
