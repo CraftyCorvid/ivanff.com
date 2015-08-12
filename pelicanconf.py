@@ -39,7 +39,7 @@ SHARIFF_LANG = 'en'
 SHARIFF_THEME = 'grey'
           
 # Paths
-STATIC_PATHS = ['extras', 'blog']
+STATIC_PATHS = ['extra', 'blog']
 EXTRA_PATH_METADATA = {'extra/CNAME': {'path': 'CNAME'},}
 ARTICLE_PATHS = ['blog']
 ARTICLE_SAVE_AS = 'blog/{date:%Y}/{date:%b}/{slug}.html'
